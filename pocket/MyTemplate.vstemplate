@@ -1,0 +1,29 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>InternalMinecraftClient</Name>
+    <Description>Internal MC:BE Client example made for 1.17.40(+) supporting multiversion support</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>InternalMinecraftClient</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="InternalMinecraftClient.vcxproj" File="InternalMinecraftClient.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">InternalMinecraftClient.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="dllmain.cpp">dllmain.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Utils.cpp">UTILS\Utils.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Math.h">UTILS\Math.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Actor.h">SDK\Actor.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Dimension.h">SDK\Dimension.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Level.h">SDK\Level.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Utils.h">UTILS\Utils.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="packages.config">packages.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
